@@ -7,7 +7,7 @@
 body{
     width: 100%;
     height: 100%;
-    background: blueviolet
+    background: rgb(228, 228, 228);
 }
 #container-css{
     width: 100%;
@@ -20,7 +20,7 @@ body{
 #container-css header{
     width: 500px;
     height: 150px;
-    background-color: darkmagenta;
+    background-color: rgb(128, 69, 146);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -37,8 +37,9 @@ body{
     border-radius: 25px;
 }
 #button-container button{
-    padding:5px;
-    background-color: rgb(141, 29, 185);
-    border: solid 0.5px #F5F5F5;
+    padding: 10px;
+    background-color: rgb(169, 108, 194);
+    border: none;
+    outline: none;
     border-radius: 5px;
 }

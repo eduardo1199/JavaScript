@@ -12,29 +12,62 @@
 //.splice(a, b) remover um item do array sendo a e b índices do elemento de remoção
 //.indexOf() recebe como parametro um elemento que voce quer e pega o índice dele dentro do array.
  
-let dado = {
-    name: "Eduardo Soares",
-    age:21,
-    stars: 1452.62,
-    isSubscribed: true
+let pessoas = [
+    {
+        name: "Eduardo Soares",
+        age:21,
+        stars: 1452.62,
+        isSubscribed: true
+    },
+    {
+        name:"Guilherme Soares",
+        age:15,
+        stars:51485,
+        isSubscribed:true
+    },
+    {
+        name:"Andreza Soares",
+        age:24,
+        stars:1000,
+        isSubscribed:false
+    },
+    {
+        name:"Andrea Soares",
+        age:40,
+        stars:454,
+        isSubscribed:false
+    },
+    {
+        name:"Fernanda Campos",
+        age:21,
+        stars:48478,
+        isSubscribed:true
+    },
+]
+let functionSelectTypePessoas = (type) =>{
+    let selectPessoas = [];
+    if(type == "age"){
+        pessoas.forEach((element,index) => {
+            if(element.age <= 20) {
+                selectPessoas.push(element)
+            }
+        })
+        return selectPessoas;
+    }
+    if(type == "stars"){
+        pessoas.forEach(element => {
+            if(element.stars <= 5000) selectPessoas.push(element)
+        })
+        return selectPessoas;
+    }
+    if(type == "includes"){
+        pessoas.forEach(element => {
+            if(element.name.includes("Soares")) selectPessoas.push(element)
+        })
+        return selectPessoas;
+    }
 }
-const dados = [dado];
 
+//console.log(functionSelectTypePessoas("includes"));
+//console.log(pessoas.splice())
 
-let printDate = (dados) => {
-    console.log(dados.name);
-    console.log(dados.age);
-    console.log(dados.stars);
-    console.log(dados.isSubscribed);
-}
-let oursPrintDate = function(dados){
-    console.log(dados.name);
-    console.log(dados.age);
-    console.log(dados.stars);
-    console.log(dados.isSubscribed);
-}
-
-printDate(dado);
-oursPrintDate(dado);
-dados.push(dado);
-console.log(dados);
