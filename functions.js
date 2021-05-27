@@ -67,7 +67,27 @@ let functionSelectTypePessoas = (type) =>{
         return selectPessoas;
     }
 }
+let functionRemoveElement = (name, pessoas) =>{
+    let index = undefined;
+    pessoas.forEach(element => {
+        if(element.name == name){
+            index = pessoas.indexOf(element);
+            pessoas.splice(index, 1);
+        }
+    });
+    
+    let boolean = pessoas.lenght > 0 ? `${pessoas}` : `${false}`
+}
 
+/* let boolean = pessoas.lenght > 0 ? `${pessoas}` : `${false}` 
+    boolean = o tamanho do array de pessoas é maior que zaro ? se sim, boolean = pessoas, se não...boolean = false
+*/
 //console.log(functionSelectTypePessoas("includes"));
 //console.log(pessoas.splice())
+//console.log(functionRemoveElement("Andreza Soares", pessoas));
+
+//Operador delete tem função de deletar um propriedade de um objeto.
+//New serve para criar um novo objeto
+
+
 
