@@ -80,7 +80,7 @@ let functionRemoveElement = (name, pessoas) =>{
 }
 
 /* let boolean = pessoas.lenght > 0 ? `${pessoas}` : `${false}` 
-    boolean = o tamanho do array de pessoas é maior que zaro ? se sim, boolean = pessoas, se não...boolean = false
+    boolean = o tamanho do arrya de pessoas é maior que zaro ? se sim, boolean = pessoas, se não...boolean = false
 */
 //console.log(functionSelectTypePessoas("includes"));
 //console.log(pessoas.splice())
@@ -88,6 +88,25 @@ let functionRemoveElement = (name, pessoas) =>{
 
 //Operador delete tem função de deletar um propriedade de um objeto.
 //New serve para criar um novo objeto
+
+let maiorDeIdade = (User) =>{
+    let maior = User >= 18 ?  true : false; // usuario é maior que 18 ? se sim return true se não false
+    return maior;
+}
+
+let functionError = (User) => {
+    if(User == ""){
+        throw new Error("ERRO, NOME VAZIO") //lançar erro na função caso o nome venha vazio
+    }
+    return console.log(User);
+}
+
+/* try{
+    functionError(""); //executar função
+}catch(e){ // catch captura o erro lançado pela função
+ console.log(e);
+} */
+
 
 
 
