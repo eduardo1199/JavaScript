@@ -106,7 +106,66 @@ let functionError = (User) => {
 }catch(e){ // catch captura o erro lançado pela função
  console.log(e);
 } */
+/* 
+for(let element of elementos){ o for of percorre o que possue nesse elemento, seja um array ou string.
+    console.log(element)
+} */
+/* 
+for(let property in pessoas){ o for in percorre as propriedades de objeto
+    console.log(property)
+} */
 
+let conversionNotaByCaractere = (nota) => {
+    if(nota >= 90 && nota <= 100){
+        return "A";
+    }
+    if(nota >= 80 && nota <= 89){
+        return "B";
+    }
+    if(nota >= 70 && nota <= 79){
+        return "C";
+    }
+    if(nota >= 60 && nota <= 69){
+        return "D";
+    }
+    return "F";
+}
 
+const biblioteca = [
+    {
+        categoria:"Livros infantis",
+        books:[
+            {
+                name:"Bela adormecida",
+            },
+            {
+                name:"Bruxa"
+            },
+            {
+                name:"Cinderela"
+            }
+        ]
+    },
+    {
+        categoria:"Livros de terror",
+        books:[
+            {
+                name:"O espantalho"
+            },
+            {
+                name:"A floresta"
+            },
+            {
+                name:"Bela"
+            }
+        ]
+    }
+]
 
+let contarNumeroDeCatergorias = (biblioteca) => {
+    console.log(biblioteca);
+}
+//console.log(conversionNotaByCaractere(nota));
 
+let qtn_categorias = contarNumeroDeCatergorias(biblioteca);
+console.log(qtn_categorias);
