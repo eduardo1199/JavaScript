@@ -27,6 +27,7 @@ body, input, textarea,button{
     display: flex;
     align-items: flex-end;
 
+    flex-direction: column;
     margin-bottom: 20px;
 }
 #input-container{

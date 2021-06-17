@@ -18,18 +18,19 @@
         </div>
         <div>
             <div id="textarea-container">
+                <h4 id="title-textarea">Caixa de testo para preencher mensagem</h4>
                 <textarea name="textarea" id="textareaInput" cols="30" rows="10"></textarea>
-                <button>
+                <button onclick="submitTextarea()">
                     Submit Text
                 </button>
             </div>
             <div id="input-container">
-                <input type="text">
+                <input type="text" id="input">
                 <button>
                     Submit Title
                 </button>
             </div>
-            <div>
+            <div id="insertHtml">
 
             </div>
         </div>
@@ -40,6 +41,6 @@
             </blockquote>
         </div>
     </div>
-    <script src="functions.js"></script>
+    <script src="manipulatingDom.js"></script>
 </body>
 </html>
