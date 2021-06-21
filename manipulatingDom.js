@@ -13,5 +13,10 @@ let submitTextarea = () => {
 
     let insertHTML = document.querySelector("#insertHtml"); 
     insertHTML.innerHTML = `<h2>${textareaValue.value}</h2>` //inserir elemento html dentro da pagina // inserindo valor do 
+    insertHTML.classList.add("active-color"); //inserir uma classe style no elemento
 
+    let button = document.querySelector("button")
+    button.setAttribute("id", "button"); // inserir atributos no elemento   
+
+    
 }

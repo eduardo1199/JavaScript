@@ -40,3 +40,6 @@ body, input, textarea,button{
 textarea, input{
     outline: none;
 }
+.active-color{
+    background-color: rgb(255, 192, 66);
+}
